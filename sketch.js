@@ -83,11 +83,11 @@ function draw() {
     if (Protector.collide(Hostage)) {
         Hostage.addSpeed(.2, Protector.rotation);
     }
-    if (keyDown("A"))
+     if (keyDown("LEFT_ARROW"))
         Protector.rotation -= 4;
-    if (keyDown("D"))
+    if (keyDown("RIGHT_ARROW"))
         Protector.rotation += 4;
-    if (keyDown("W")) {
+    if (keyDown("UP_ARROW")) {
         Protector.addSpeed(.2, Protector.rotation);
     }
     if (frameCount % 200 == 0) {
